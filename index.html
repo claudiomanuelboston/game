@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock, Paper,or Scissors?</title>
+    <script src='script.js' defer></script>
+
+    <style>
+        .message,
+        #results {display: none;}
+
+        div {padding: 10px 0;}
+
+        #winMessage {color: green;}
+        #loseMessage {color: red;
+    </style>
+</head>
+
+<body>
+    <h1>Rock, Paper, or Scissors?</h1>
+    <div>
+        <label><input type='radio' value='rock' name='choice' checked> rock</label>
+        <label><input type='radio' value='paper' name='choice'> paper</label>
+		<label><input type='radio' value='scissors' name='choice'> scissors</label>
+    </div>
+    <button id='btn'>Random Selection</button>
+    <div id='results'>Randon value was: 
+		<span id='Message'></span>
+        <div id='winMessage' class='message'>It is a tie</div>
+        <div id='loseMessage' class='message'>Your selection didn't match the random value generated</div>
+    </div>
+</body>
+</html>
